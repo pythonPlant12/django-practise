@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% for contact in all_contacts %}
+<ul>
+<li><a href="{{contact.get_absolute_url}}">{{contact.name}}</a></li>
+</ul>
+{% endfor %}
+{% endblock body %}

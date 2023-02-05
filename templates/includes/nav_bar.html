@@ -1,0 +1,11 @@
+{% load static %}
+<link href={% static 'nav_bar.css' %} rel="stylesheet">
+<nav>
+    <a href={% url 'index' %}><i class="fas fa-home home"></i> Home</a>
+    <a href={% url 'about-me' %}></i> About</a>
+    <a href={% url 'services' %}></i> Services</a>
+    <a href={% url 'skills' %}></i> Skills</a>
+    <a href={% url 'contact' %}></i> Contact</a>
+    <a href={% url 'login' %} class="aj_btn"> <i class="fas fa-lock" aria-hidden="true"></i>
+    LOGIN</a>
+</nav>

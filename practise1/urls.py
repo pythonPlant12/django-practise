@@ -15,13 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from nikita import views
 from django.conf.urls import handler404
 
-handler404 = "nikita.views.custom_404"
+handler404 = "practise_app.views.custom_404"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("nikita.urls"))
+    path("", include("practise_app.urls"))
 ]
 

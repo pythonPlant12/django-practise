@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class NikitaConfig(AppConfig):
+class PractiseAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'nikita'
+    name = 'practise_app'
